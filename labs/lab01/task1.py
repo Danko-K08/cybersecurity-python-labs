@@ -1,5 +1,8 @@
 import random
 import string
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from shared.student import STUDENT_NAME, VARIANT_NUMBER
 
 print(f"Студент: {STUDENT_NAME}, Варіант: {VARIANT_NUMBER}\n")
