@@ -32,6 +32,7 @@ blocked_users = {"obsolete_system", "contract_expired", "legal_hold"}
 
 all_test_users = list(users.keys()) + ["contract_expired", "unknown_user"]
 
+print("Лабораторна робота No1 — Завдання 2")
 print("=" * 60)
 print("СПИСОК РЕСУРСІВ СИСТЕМИ")
 print("=" * 60)

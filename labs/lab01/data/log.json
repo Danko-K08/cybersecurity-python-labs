@@ -1,0 +1,48 @@
+[
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-25 09:11:24",
+        "args": [
+            "admin",
+            "AdminSecret12!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "failure",
+        "timestamp": "2026-09-25 09:11:24",
+        "args": [
+            "admin",
+            "WrongPass1234"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "risk_manager",
+        "result": "failure",
+        "timestamp": "2026-09-25 09:11:24",
+        "args": [
+            "risk_manager",
+            "short"
+        ],
+        "kwargs": {},
+        "error": "Пароль повинен містити щонайменше 12 символів!"
+    },
+    {
+        "event": "login",
+        "user": "",
+        "result": "failure",
+        "timestamp": "2026-09-25 09:11:24",
+        "args": [
+            "",
+            ""
+        ],
+        "kwargs": {},
+        "error": "Логін та пароль не можуть бути порожніми!"
+    }
+]

@@ -25,6 +25,8 @@ forbidden_passwords = {
     "regular123", "normal123", "test"
 }
 
+print("Лабораторна робота No1 — Завдання 1")
+
 for _ in range(3):
     random_index = random.randrange(len(passwords))
     passwords.append(passwords[random_index])
