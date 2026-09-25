@@ -1,9 +1,9 @@
-import sys
 import os
+import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
-from shared.student import STUDENT_NAME, GROUP_NAME, VARIANT_NUMBER
+from shared.student import GROUP_NAME, STUDENT_NAME, VARIANT_NUMBER
 
 users = {
     "risk_manager": {"role": "risk_analyst", "clearance": 4, "department": "Risk Management", "active": True},
@@ -32,18 +32,6 @@ blocked_users = {"obsolete_system", "contract_expired", "legal_hold"}
 
 all_test_users = list(users.keys()) + ["contract_expired", "unknown_user"]
 
-print("Лабораторна робота No1 — Завдання 2")
-print("=" * 60)
-print("СПИСОК РЕСУРСІВ СИСТЕМИ")
-print("=" * 60)
-
-for res_name, level_code in resources:
-    text_level = security_levels[level_code - 1]
-    print("Ресурс:", res_name, " " * (22 - len(res_name)), "| Рівень безпеки:", text_level)
-
-print("\n" + "=" * 60)
-print("РЕЗУЛЬТАТИ ПЕРЕВІРКИ ДОСТУПУ")
-print("=" * 60)
 
 def check_access(username: str, resource_name: str, resource_level: int) -> str:
     if username not in users:
@@ -64,7 +52,28 @@ def check_access(username: str, resource_name: str, resource_level: int) -> str:
     else:
         return "DENY (Insufficient clearance)"
 
-for username in all_test_users:
-    for res_name, res_level in resources:
-        result = check_access(username, res_name, res_level)
-        print("user=" + username + " resource=" + res_name + " -> " + result)
+
+def main():
+    print("Лабораторна робота No1 — Завдання 2")
+    print("Студент:", STUDENT_NAME, "| Група:", GROUP_NAME, "| Варіант:", VARIANT_NUMBER, "\n")
+
+    print("=" * 60)
+    print("СПИСОК РЕСУРСІВ СИСТЕМИ")
+    print("=" * 60)
+
+    for res_name, level_code in resources:
+        text_level = security_levels[level_code - 1]
+        print("Ресурс:", res_name, " " * (22 - len(res_name)), "| Рівень безпеки:", text_level)
+
+    print("\n" + "=" * 60)
+    print("РЕЗУЛЬТАТИ ПЕРЕВІРКИ ДОСТУПУ")
+    print("=" * 60)
+
+    for username in all_test_users:
+        for res_name, res_level in resources:
+            result = check_access(username, res_name, res_level)
+            print("user=" + username + " resource=" + res_name + " -> " + result)
+
+
+if __name__ == "__main__":
+    main()

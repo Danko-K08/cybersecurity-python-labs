@@ -44,5 +44,150 @@
         ],
         "kwargs": {},
         "error": "Логін та пароль не можуть бути порожніми!"
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "admin",
+            "AdminSecret12!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "risk_manager",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "risk_manager",
+            "RiskPass2026!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "developer",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "developer",
+            "DevCode321#12"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "analyst_user",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "analyst_user",
+            "AnalystPass99!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "auditor_sec",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "auditor_sec",
+            "AuditSecure77#"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "sec_officer",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "sec_officer",
+            "OfficerPass55!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "net_admin",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "net_admin",
+            "NetAdminPass88!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "db_operator",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "db_operator",
+            "DatabasePass33#"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "support_tech",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "support_tech",
+            "SupportTech11!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "guest_user",
+        "result": "success",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "guest_user",
+            "GuestAccount00!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "failure",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "admin",
+            "WrongPassword123!"
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "risk_manager",
+        "result": "failure",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "risk_manager",
+            "short"
+        ],
+        "kwargs": {},
+        "error": "Пароль повинен містити щонайменше 12 символів!"
+    },
+    {
+        "event": "login",
+        "user": "",
+        "result": "failure",
+        "timestamp": "2026-09-25 10:43:07",
+        "args": [
+            "",
+            ""
+        ],
+        "kwargs": {},
+        "error": "Логін та пароль не можуть бути порожніми!"
     }
 ]
