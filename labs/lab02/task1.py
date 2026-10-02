@@ -1,9 +1,10 @@
-import re
-import os
 import hashlib
 import hmac
-from datetime import datetime, timezone, timedelta
+import os
+import re
 from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
+
 
 class User:
     def __init__(self, username: str, email: str, role: str = "user", active: bool = True):

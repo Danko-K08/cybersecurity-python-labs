@@ -1,6 +1,8 @@
 import argparse
-from labs.lab02.task1 import User, Admin, UserAccount
+
+from labs.lab02.task1 import Admin, UserAccount
 from labs.lab02.task2 import analyze_arp
+
 
 def run_demo():
     print("--- Демонстрація Завдання 1 ---")
